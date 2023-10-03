@@ -12,7 +12,7 @@ const Home = () => {
             <Header></Header>
             <SliderBar></SliderBar>
             <LoginBar></LoginBar>
-            <div className="grid grid-cols-4 gap-6">
+            <div className="grid grid-cols-4 gap-6 mt-20">
                 <LeftNav></LeftNav>
                 <Body></Body>
                 <RightNav></RightNav>
