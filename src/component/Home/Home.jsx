@@ -7,6 +7,7 @@ import RightNav from "./RightNav";
 
 
 const Home = () => {
+
     return (
         <div className="max-w-6xl m-auto bg-[#FFF]">
             <Header></Header>

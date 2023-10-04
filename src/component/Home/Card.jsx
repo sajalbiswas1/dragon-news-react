@@ -2,11 +2,10 @@ import { BsBookmark } from 'react-icons/bs';
 import { CiShare2 } from 'react-icons/ci';
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom';
-import { AiFillEye, AiFillStar, AiOutlineStar } from 'react-icons/ai';
+import { AiFillEye, AiFillStar } from 'react-icons/ai';
 
 const Card = ({ aNews }) => {
-    const { author, image_url, title, details, rating, total_view } = aNews;
-    console.log(aNews)
+    const { _id, author, image_url, title, details, rating, total_view, } = aNews;
     return (
         <div className='border rounded-t-lg mb-7'>
             <div className='flex justify-between items-center bg-[#F3F3F3] py-3 px-5 rounded-t-md'>
@@ -25,10 +24,10 @@ const Card = ({ aNews }) => {
             <div className='px-5 mt-3 '>
                 <h3 className='text-xl font-bold text-[#403F3F] mb-5'>{title}</h3>
                 <img className='mb-7' src={image_url} alt="" />
-                <p className='text-base font-normal text-[#706F6F] pb-5'>{details.length > 200 ? details.slice(0, 200) : details} <span className='text-base font-semibold text-[#F75B5F]'> {details.length > 200 && <Link to={''}> See more...</Link>}</span> </p>
-                <hr className=''/>
+                <p className='text-base font-normal text-[#706F6F] pb-5'>{details.length > 200 ? details.slice(0, 200) : details} <span className='text-base font-semibold text-[#F75B5F]'> {details.length > 200 && <Link to={`/details/${_id}`}> See more...</Link>}</span> </p>
+                <hr className='' />
             </div>
-            
+
             <div className='flex items-center justify-between px-5'>
                 <div className='flex items-center py-5'>
                     <AiFillStar className='w-6 h-6  text-[#FF8C47]'></AiFillStar>
