@@ -4,7 +4,9 @@ import userIcon from '../assets/user.png'
 const LoginBar = () => {
     return (
         <div className='grid grid-cols-3 mt-5'>
-            <p></p>
+            <div>
+                
+            </div>
             <div className='flex justify-center gap-3'>
                 <h5 className='text-lg font-normal text-[#706F6F]'>Home</h5>
                 <h5 className='text-lg font-normal text-[#706F6F]'>About</h5>
