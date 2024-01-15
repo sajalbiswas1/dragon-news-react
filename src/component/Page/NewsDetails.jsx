@@ -7,9 +7,7 @@ const NewsDetails = () => {
     const data = useLoaderData()
     const {id} = useParams();
     const news = data.find(bNews => bNews._id === id)
-    console.log(data)
-    console.log(news)
-    console.log(id)
+
     return (
         <div className="max-w-6xl m-auto">
             <Header></Header>

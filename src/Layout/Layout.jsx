@@ -6,6 +6,7 @@ import UserFrom from "../component/Page/UserFrom";
 import LoginFrom from "../component/LoginFrom";
 import RegisterFrom from "../component/RegisterFrom";
 import PrivetRoute from "../PrivetRoute/PrivetRoute";
+import ForgetPassword from "../component/ForgetPassword";
 
 
 const router = createBrowserRouter([
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
                     {
                         path:'/userForm/register',
                         element:<RegisterFrom></RegisterFrom>
+                    },
+                    {
+                        path:'/userForm/forget',
+                        element:<ForgetPassword></ForgetPassword>
                     }
                 ]
             }

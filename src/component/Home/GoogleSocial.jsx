@@ -6,7 +6,6 @@ import qZone3 from "../../assets/qZone3.png"
 import { useContext } from 'react';
 import { AuthContext } from '../../AuthProvider/AuthProvider';
 import { Link } from 'react-router-dom';
-import { FacebookAuthProvider } from 'firebase/auth';
 
 
 const GoogleSocial = () => {
@@ -18,9 +17,6 @@ const GoogleSocial = () => {
         facebookLogin()
             .then(result => {
                 console.log(result)
-                const credential = FacebookAuthProvider.credentialFromResult(result);
-                const accessToken = credential.accessToken;
-                console.log(accessToken)
             })
             .catch(error => {
                 console.log(error)
